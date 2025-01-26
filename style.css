@@ -1,0 +1,137 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Satoshi', sans-serif;
+}
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Top Banner */
+.top-banner {
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 0;
+    position: relative;   
+}
+
+.top-banner div {
+    max-width: 766px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: 260px;
+}
+
+.top-banner a {
+    color: #fff;
+    text-decoration: underline;
+    
+}
+.top-banner img {
+    margin-left: auto;
+}
+
+/* X Icon in Top Banner */
+.top-banner .close-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    
+    background-size: contain;
+    cursor: pointer;
+}
+
+/* Main Header */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.logo {
+    font-size: 32px;
+}
+
+.alfa-slab-one-regular {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.shop-item {
+    margin-left: 15px; /* Scoops 'Shop \/' slightly to the right */
+}
+
+/* Search Bar */
+.search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.search-bar button {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    padding: 8px;
+}
+
+.search-bar .search-icon {
+    width: 24px;
+    height: 24px;
+    background: url('pictures/Frame.png') no-repeat center;
+    background-size: contain;
+}
+
+.search-bar .placeholder {
+    margin-left: 10px;
+    color: #aaa;
+    font-size: 16px;
+}
+
+/* Icons */
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icons span {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cart-icon {
+    background: url('pictures/Frame (1).png') no-repeat center;
+}
+
+.profile-icon {
+    background: url('pictures/Vector.png') no-repeat center;
+}
