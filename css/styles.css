@@ -1,0 +1,444 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 16px;
+  font-family: "Satoshi", sans-serif;
+}
+
+/* chemi */
+
+/* Top Banner */
+.top-banner {
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  padding: 9px 0;
+  position: relative;
+}
+
+.top-banner div {
+  max-width: 766px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: 260px;
+}
+
+.top-banner a {
+  color: #fff;
+  text-decoration: underline;
+}
+.top-banner img {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+/* X Icon in Top Banner */
+.top-banner .close-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  cursor: pointer;
+}
+
+/* Main Header */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  max-width: 1240px;
+  margin: 24px auto;
+}
+
+/* Logo */
+.logo {
+  font-size: 32px;
+}
+
+.alfa-slab-one-regular {
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.shop-item {
+  font-size: 16px;
+  margin-left: 40px;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 150px;
+  background-color: #f2f0f1;
+  overflow: hidden;
+  min-height: 600px;
+}
+
+.hero-content {
+  max-width: 680px;
+  z-index: 1;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.hero-content h1 {
+  font-family: "Alfa Slab One", serif;
+  font-size: 64px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+.hero-content p {
+  color: #00000099;
+  font-size: 16px;
+  margin-bottom: 30px;
+  max-width: 700px;
+  text-align: left; /* Ensure paragraph is left-aligned */
+  margin-left: 0; /* Remove any left margin */
+}
+
+.cta-button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.hero-image {
+  position: absolute;
+  right: 60px;
+  top: 0;
+  height: 100%;
+  width: 70%; /* Takes up more space on the right side */
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+}
+
+.shop-now-button {
+  width: 210px;
+  height: 52px;
+  top: 50px;
+  left: 100px;
+  padding: 16px 54px;
+  gap: 12px;
+  border-radius: 25px; /* Increased for a more rounded look */
+  opacity: 1; /* Ensure the button is visible */
+  background-color: #000; /* Set button background color */
+  color: #fff; /* Set button text color */
+  font-family: "Satoshi", sans-serif; /* Ensure you link the font */
+  font-size: 16px;
+  cursor: pointer; /* Set cursor to indicate interactivity */
+  margin-top: -1px; /* Move the button up by 1 pixel */
+}
+
+/* New styles for stats section */
+.stats {
+  display: flex;
+  justify-content: space-around; /* Distributes items evenly */
+  margin-top: 20px; /* Adds space above the stats */
+}
+
+.hr {
+  height: 74px;
+  width: 1px;
+  background-color: black;
+  opacity: 0.2;
+}
+
+.stat-item {
+  text-align: center; /* Centers the text */
+}
+
+.stat-item h2 {
+  font-size: 40px; /* Size for the main text */
+  margin: 0; /* Removes default margin */
+  font-family: "Satoshi", sans-serif;
+}
+
+.stat-item p {
+  font-size: 16px; /* Size for the subtext */
+  margin: 0; /* Removes default margin */
+  font-family: "Satoshi", sans-serif;
+}
+
+/* Additional styles for the button hover state */
+.shop-now-button:hover {
+  background-color: #333; /* Slightly lighter black on hover */
+}
+.hero-side-image-wrapper {
+  width: 1440px;
+  height: 331.5px;
+  overflow: hidden;
+  position: absolute;
+  top: 134px;
+  right: 0;
+  z-index: -1;
+}
+
+.hero-side-image {
+  width: 1440px;
+  height: 663px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.star-icon-1 {
+  position: absolute;
+  width: 56px;
+  height: 53.23px;
+  left: 850px;
+  top: 309.7px;
+  z-index: 2;
+}
+
+.star-icon-2 {
+  position: absolute;
+  width: 104px;
+  height: 98.86px;
+  left: 1450px;
+  top: 109.13px;
+  z-index: 2;
+}
+
+.star-icon-1 img,
+.star-icon-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Icons */
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icons span {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cart-icon {
+  background: url("pictures/Frame (1).svg") no-repeat center;
+}
+
+.profile-icon {
+  background: url("pictures/Vector.svg") no-repeat center;
+}
+
+/*  chemi*/
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+a {
+  text-decoration: none;
+}
+/* top_nav */
+
+/* navbar */
+.nav {
+  width: 100%;
+  height: 80px;
+}
+.nav_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav_list {
+  display: flex;
+  list-style: none;
+}
+.nav_logo {
+  font-size: 32px;
+  font-family: "Alfa Slab One", serif;
+  color: #0f0f0f;
+  font-weight: bold;
+}
+.nav_link {
+  margin: 0rem 0.7rem;
+  color: #0f0f0f;
+}
+/* Search Bar */
+.search-bar {
+  flex-grow: 1;
+  margin: 0 40px;
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 25px;
+  padding: 5px 15px;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+  margin: 0;
+  background: none;
+  border-radius: 25px;
+  color: #333;
+}
+
+.search-bar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar .search-icon {
+  width: 24px;
+  height: 24px;
+  background: url("/images/search.png") no-repeat center;
+  background-size: contain;
+}
+
+.search-bar .placeholder {
+  margin-left: 10px;
+  color: #aaa;
+  font-size: 16px;
+}
+.user_cart {
+  margin-right: 2rem;
+}
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icons span {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cart-icon {
+  background: url("/images/cart.png") no-repeat center;
+}
+
+.profile-icon {
+  background: url("/pictures/Vector.svg") no-repeat center;
+}
+/* header */
+.header {
+  width: 100%;
+  height: calc(100vh - 12rem);
+  background-image: url(../images/header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header_wrapper {
+  width: 50%;
+}
+.header_main_title {
+  font-family: "Alfa Slab One", serif;
+  font-size: 64px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.heading_p {
+  padding: 1.6rem 0rem;
+}
+.header_btn {
+  padding: 2rem 5rem;
+  margin: 2rem 0rem;
+  background-color: #0f0f0f;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+.header_counters {
+  width: 100%;
+  display: flex;
+  margin-top: 3rem;
+}
+.header_counter:not(:first-child) {
+  margin-left: 2rem;
+}
+.count_number {
+  font-size: 3.6rem;
+  margin-bottom: 0.6rem;
+}
+.brands {
+  width: 100%;
+  background-color: #0f0f0f;
+}
+.brands_container {
+  padding: 5rem 10rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brands_container .high {
+  margin-top: -90px;
+}
