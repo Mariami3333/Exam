@@ -1,21 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop.co</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
-  <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <div class="top-banner">
-      <div>
-        <p>Sign up and get 20% off your first order. <a href="#">Sign Up Now</a></p>
-        <img src="/pictures/Frame.svg" alt="x">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOP.CO</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div id="topBanner" class="top-banner">
+        <div>
+          <p>
+            Sign up and get 20% off your first order.
+            <a href="#">Sign Up Now</a>
+          </p>
+          <img id="closeButton" src="/pictures/x.svg" alt="x" />
+        </div>
+      </div>
+      <div class="main-header">
+        <div class="logo alfa-slab-one-regular">SHOP.CO</div>
+        <nav>
+          <ul>
+            <li class="shop-item">
+              Shop <img src="/pictures/arrowdown.svg" alt="arrowdown" />
+            </li>
+            <li>On Sale</li>
+
+            <li>New Arrivals</li>
+            <li>Brands</li>
+          </ul>
+        </nav>
+
+        <div class="search-bar">
+          <button>
+            <span class="search-icon"></span>
+          </button>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search for products..."
+          />
+        </div>
+
+        <div class="icons">
+          <span class="cart-icon"></span>
+          <span class="profile-icon"></span>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>
+          FIND CLOTHES <br />
+          THAT MATCHES <br />
+          YOUR STYLE
+        </h1>
+        <p>
+          Browse through our diverse range of meticulously crafted garments,
+          designed <br />
+          to bring out your individuality and cater to your sense of style.
+        </p>
+        <button class="shop-now-button" style="opacity: 1">Shop Now</button>
+
+        <div class="stats">
+          <div class="stat-item">
+            <h2>200+</h2>
+            <p>International Brands</p>
+          </div>
+          <div class="hr"></div>
+          <div class="stat-item">
+            <h2>2,000+</h2>
+            <p>High-Quality Products</p>
+          </div>
+          <div class="hr"></div>
+          <div class="stat-item">
+            <h2>30,000+</h2>
+            <p>Happy Customers</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="pictures/Rectangle 2.png" alt="Shopping Bags" />
+      </div>
+      <div class="star-icon-1">
+        <img src="pictures/star1.svg" alt="Decorative star" />
+      </div>
+      <div class="star-icon-2">
+        <img src="pictures/star2.svg" alt="Decorative star" />
+      </div>
+    </section>
+
+    <div class="brands">
+      <div class="container brands_container">
+        <img src="./images/logos/1.png" alt="" class="brand_logo high" />
+        <img src="./images/logos/2.png" alt="" class="brand_logo" />
+        <img src="./images/logos/3.png" alt="" class="brand_logo" />
+        <img src="./images/logos/4.png" alt="" class="brand_logo" />
+        <img src="./images/logos/5.png" alt="" class="brand_logo high" />
       </div>
     </div>
     <div class="main-header">
@@ -195,3 +291,7 @@
  
  <script src="script.js"></script>
  
+
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
