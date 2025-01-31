@@ -87,26 +87,46 @@ nav ul li {
 
 /* Search Bar */
 .search-bar {
-    flex-grow: 1;
-    margin: 0 20px;
+  flex-grow: 1;
+  margin: 0 20px;
+  display: flex; /* Ensures children align properly */
+  align-items: center; /* Vertically centers the input and icon */
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 5px 15px; /* Add padding for spacing */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional */
+}
+
+.search-bar input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px; /* Add padding for better spacing */
+  margin: 0;
+  background: none;
+  border-radius: 25px;
+  color: #333; /* Text color */
 }
 
 .search-bar button {
-    display: flex;
-    align-items: center;
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-    padding: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 .search-bar .search-icon {
-    width: 24px;
-    height: 24px;
-    background: url('pictures/Frame (2).svg') no-repeat center;
-    background-size: contain;
+  width: 24px;
+  height: 24px;
+  background: url('pictures/Frame (2).svg') no-repeat center;
+  background-size: contain;
 }
+
 
 .search-bar .placeholder {
     margin-left: 10px;
@@ -136,27 +156,43 @@ nav ul li {
 }
 
 /* Additions for Hero Section */
+
 .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 20px;
-    background-color: #f8f8f8;
-  }
-  
-  .hero-content {
-    max-width: 50%;
-  }
-  
-  .hero-content h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-  }
-  
-  .hero-content p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 100px; /* Increased padding for better spacing */
+  background-color: #F2F0F1;
+  overflow: hidden; /* Prevents image overflow */
+  min-height: 600px; /* Ensures minimum height for the section */
+}
+
+.hero-content {
+  max-width: 600px; /* Increased max-width */
+  z-index: 1; /* Ensures content stays above the image */
+  padding-right: 20px;
+  text-align: left; /* Changed from center to left */
+}
+
+.hero-content h1 {
+  font-family: "Alfa Slab One", serif;
+  font-size: 64px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+
+
+.hero-content p {
+  color: #00000099;
+  font-size: 16px;
+  margin-bottom: 30px;
+  max-width: 700px;
+  text-align: left; /* Ensure paragraph is left-aligned */
+  margin-left: 0; /* Remove any left margin */
+}
   
   .cta-button {
     background-color: #000;
@@ -168,123 +204,119 @@ nav ul li {
     font-size: 16px;
   }
   
-  .hero-image img {
-    max-width: 100%;
-    border-radius: 10px;
-  }
-  
-  /* Featured Products */
-  .featured-products {
-    padding: 40px 20px;
-    text-align: center;
-  }
-  
-  .featured-products h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-  
-  .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-  }
-  
-  .product-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-  }
-  
-  .product-card img {
-    max-width: 100%;
-    border-radius: 5px;
-  }
-  
-  .product-name {
-    font-size: 18px;
-    margin: 10px 0;
-  }
-  
-  .product-price {
-    font-size: 16px;
-    color: #888;
-  }
-  
-  /* styles.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  footer {
-    background-color: #f8f9fa;
-    padding: 40px 20px;
-    text-align: center;
-  }
-  
-  .newsletter {
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-  
-  .newsletter h2 {
-    margin: 0 0 10px;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .newsletter form {
+ 
+.hero-image {
+  position: absolute;
+  right: 60px;
+  top: 0;
+  height: 100%;
+  width: 70%; /* Takes up more space on the right side */
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+}
+
+
+.shop-now-button {
+  width: 210px;
+  height: 52px;
+  top: 50px;
+  left: 100px;
+  padding: 16px 54px;
+  gap: 12px;
+  border-radius: 25px; /* Increased for a more rounded look */
+  opacity: 1; /* Ensure the button is visible */
+  background-color: #000; /* Set button background color */
+  color: #fff; /* Set button text color */
+  font-family: "Satoshi", sans-serif; /* Ensure you link the font */
+  font-size: 16px;
+  cursor: pointer; /* Set cursor to indicate interactivity */
+  margin-top: -1px; /* Move the button up by 1 pixel */
+}
+
+/* New styles for stats section */
+.stats {
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  
-  .newsletter input[type="email"] {
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    width: 300px;
-  }
-  
-  .newsletter button {
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #000;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .newsletter button:hover {
-    background-color: #ddd;
-  }
-  
-  .footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    text-align: left;
-    padding: 20px 0;
-  }
-  
-  .footer-content div {
-    margin-bottom: 20px;
-  }
-  
-  .footer-content h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
+    justify-content: space-around; /* Distributes items evenly */
+    margin-top: 20px; /* Adds space above the stats */
+}
+
+.stat-item {
+    text-align: center; /* Centers the text */
+}
+
+.stat-item h2 {
+    font-size: 40px; /* Size for the main text */
+    margin: 0; /* Removes default margin */
+    font-family: "Satoshi", sans-serif;
+}
+
+.stat-item p {
+    font-size: 16px; /* Size for the subtext */
+    margin: 0; /* Removes default margin */
+    font-family: "Satoshi", sans-serif;
+}
+
+/* Additional styles for the button hover state */
+.shop-now-button:hover {
+  background-color: #333; /* Slightly lighter black on hover */
+}
+
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Product Container */
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Product Card styles */
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.product-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Hover effects */
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+   
   
   .footer-content ul {
     list-style: none;
@@ -337,24 +369,189 @@ body {
 
   .hero-content {
     max-width: 50%;
-    position: relative; /* For better control */
+    position: relative; 
 }
 
 
 
 .hero-side-image-wrapper {
     width: 1440px;
-    height: 331.5px; /* Half of the original height (663px / 2) */
-    overflow: hidden; /* Ensures only the visible part of the image shows */
+    height: 331.5px; 
+    overflow: hidden; 
     position: absolute;
     top: 134px;
     right: 0;
-    z-index: -1; /* Keeps it behind other content */
+    z-index: -1; 
 }
 
 .hero-side-image {
     width: 1440px;
-    height: 663px; /* Maintain the original height for proper cropping */
-    object-fit: cover; /* Ensures the image fills the space while being cropped */
-    object-position: top; /* Focus on the top half of the image */
+    height: 663px; 
+    object-fit: cover;
+    object-position: top;
 }
+
+
+
+.star-icon-1 {
+  position: absolute;
+  width: 56px;
+  height: 53.23px;
+  left: 850px;
+  top: 309.7px;
+  z-index: 2;
+}
+
+.star-icon-2 {
+  position: absolute;
+  width: 104px;
+  height: 98.86px;
+  left: 1450px;
+  top: 109.13px;
+  z-index: 2;
+}
+
+.star-icon-1 img,
+.star-icon-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/* tata new arrival category */
+
+/* New Arrivals Section */
+.new-arrivals {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.new-arrivals .section-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-family: "Alfa Slab One", serif;
+}
+
+.new-arrivals .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.new-arrivals .product-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.new-arrivals .product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.new-arrivals .product-card img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.new-arrivals .product-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.new-arrivals .product-price {
+  font-size: 18px;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.new-arrivals .shop-now-button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.new-arrivals .shop-now-button:hover {
+  background-color: #444;
+}
+
+.shop-now-container {
+  position: relative;
+}
+
+
+
+.shop-now-button:hover {
+  background-color: #333; /* Slightly lighter black on hover */
+}
+
+
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Product Container */
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Product Card stili */
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.product-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Hoveri */
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
