@@ -13,9 +13,6 @@ body {
   font-family: "Satoshi", sans-serif;
 }
 
-/* chemi */
-
-/* Top Banner */
 .top-banner {
   background-color: black;
   color: white;
@@ -42,7 +39,6 @@ body {
   cursor: pointer;
 }
 
-/* X Icon in Top Banner */
 .top-banner .close-icon {
   position: absolute;
   right: 10px;
@@ -54,7 +50,6 @@ body {
   cursor: pointer;
 }
 
-/* Main Header */
 .main-header {
   display: flex;
   align-items: center;
@@ -64,7 +59,6 @@ body {
   margin: 24px auto;
 }
 
-/* Logo */
 .logo {
   font-size: 32px;
 }
@@ -75,7 +69,6 @@ body {
   font-style: normal;
 }
 
-/* Navigation */
 nav ul {
   list-style: none;
   display: flex;
@@ -127,8 +120,8 @@ nav ul li {
   font-size: 16px;
   margin-bottom: 30px;
   max-width: 700px;
-  text-align: left; /* Ensure paragraph is left-aligned */
-  margin-left: 0; /* Remove any left margin */
+  text-align: left; 
+  margin-left: 0; 
 }
 
 .cta-button {
@@ -146,7 +139,7 @@ nav ul li {
   right: 60px;
   top: 0;
   height: 100%;
-  width: 70%; /* Takes up more space on the right side */
+  width: 70%; 
   overflow: hidden;
 }
 
@@ -164,21 +157,21 @@ nav ul li {
   left: 100px;
   padding: 16px 54px;
   gap: 12px;
-  border-radius: 25px; /* Increased for a more rounded look */
-  opacity: 1; /* Ensure the button is visible */
-  background-color: #000; /* Set button background color */
-  color: #fff; /* Set button text color */
-  font-family: "Satoshi", sans-serif; /* Ensure you link the font */
+  border-radius: 25px; 
+  opacity: 1; 
+  background-color: #000; 
+  color: #fff; 
+  font-family: "Satoshi", sans-serif; 
   font-size: 16px;
-  cursor: pointer; /* Set cursor to indicate interactivity */
-  margin-top: -1px; /* Move the button up by 1 pixel */
+  cursor: pointer; 
+  margin-top: -1px; 
 }
 
-/* New styles for stats section */
+
 .stats {
   display: flex;
-  justify-content: space-around; /* Distributes items evenly */
-  margin-top: 20px; /* Adds space above the stats */
+  justify-content: space-around; 
+  margin-top: 20px; 
 }
 
 .hr {
@@ -189,24 +182,23 @@ nav ul li {
 }
 
 .stat-item {
-  text-align: center; /* Centers the text */
+  text-align: center; 
 }
 
 .stat-item h2 {
-  font-size: 40px; /* Size for the main text */
-  margin: 0; /* Removes default margin */
+  font-size: 40px; 
+  margin: 0; 
   font-family: "Satoshi", sans-serif;
 }
 
 .stat-item p {
-  font-size: 16px; /* Size for the subtext */
-  margin: 0; /* Removes default margin */
+  font-size: 16px; 
+  margin: 0; 
   font-family: "Satoshi", sans-serif;
 }
 
-/* Additional styles for the button hover state */
 .shop-now-button:hover {
-  background-color: #333; /* Slightly lighter black on hover */
+  background-color: #333; 
 }
 .hero-side-image-wrapper {
   width: 1440px;
@@ -250,7 +242,6 @@ nav ul li {
   object-fit: contain;
 }
 
-/* Icons */
 .icons {
   display: flex;
   gap: 15px;
@@ -271,7 +262,6 @@ nav ul li {
   background: url("pictures/Vector.svg") no-repeat center;
 }
 
-/*  chemi*/
 
 .container {
   max-width: 1440px;
@@ -282,9 +272,7 @@ nav ul li {
 a {
   text-decoration: none;
 }
-/* top_nav */
 
-/* navbar */
 .nav {
   width: 100%;
   height: 80px;
@@ -441,4 +429,46 @@ a {
 
 .brands_container .high {
   margin-top: -90px;
+}
+
+/* section */
+.section {
+  margin-top: 6.8rem;
+}
+
+.section_header_title {
+  font-size: 4.8rem;
+  font-weight: 300;
+  margin-bottom: 4.7rem;
+  text-align: center;
+  font-family: "Alfa Slab One", serif;
+}
+.products {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  margin-bottom: 4rem;
+}
+.product_img {
+  width: 100%;
+  max-width: 295px;
+  height: 100%;
+  max-height: 298px;
+  object-fit: contain;
+  border-radius: 20px;
+}
+.product_title {
+  margin: 2rem 0rem;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product_price {
+  font-size: 2.6rem;
+  margin-top: 1rem;
 }
