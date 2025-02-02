@@ -61,48 +61,4 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   fetchProducts();
-
-  const swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    freeMode: false,
-    allowTouchMove: false, // Disable touch/mouse drag
-    noSwiping: true, // Disable swiping
-    preventClicks: true, // Prevent unwanted click events
-    simulateTouch: false, // Disable simulated touch events
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: false, // Disable pagination clicks
-    },
-    // Responsive breakpoints
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 10
-      },
-      480: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 20
-      },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 30
-      }
-    },
-    mousewheel: false, // Disable mousewheel scrolling
-    keyboard: false, // Disable keyboard navigation
-  });
-  
-  // Add event listeners for arrow navigation
-  document.querySelector('.left-arrow').addEventListener('click', () => {
-    swiper.slidePrev();
-  });
-  
-  document.querySelector('.right-arrow').addEventListener('click', () => {
-    swiper.slideNext();
-  });
 });
