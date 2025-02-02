@@ -120,8 +120,8 @@ nav ul li {
   font-size: 16px;
   margin-bottom: 30px;
   max-width: 700px;
-  text-align: left; 
-  margin-left: 0; 
+  text-align: left;
+  margin-left: 0;
 }
 
 .cta-button {
@@ -139,7 +139,7 @@ nav ul li {
   right: 60px;
   top: 0;
   height: 100%;
-  width: 70%; 
+  width: 70%;
   overflow: hidden;
 }
 
@@ -157,21 +157,20 @@ nav ul li {
   left: 100px;
   padding: 16px 54px;
   gap: 12px;
-  border-radius: 25px; 
-  opacity: 1; 
-  background-color: #000; 
-  color: #fff; 
-  font-family: "Satoshi", sans-serif; 
+  border-radius: 25px;
+  opacity: 1;
+  background-color: #000;
+  color: #fff;
+  font-family: "Satoshi", sans-serif;
   font-size: 16px;
-  cursor: pointer; 
-  margin-top: -1px; 
+  cursor: pointer;
+  margin-top: -1px;
 }
-
 
 .stats {
   display: flex;
-  justify-content: space-around; 
-  margin-top: 20px; 
+  justify-content: space-around;
+  margin-top: 20px;
 }
 
 .hr {
@@ -182,23 +181,23 @@ nav ul li {
 }
 
 .stat-item {
-  text-align: center; 
+  text-align: center;
 }
 
 .stat-item h2 {
-  font-size: 40px; 
-  margin: 0; 
+  font-size: 40px;
+  margin: 0;
   font-family: "Satoshi", sans-serif;
 }
 
 .stat-item p {
-  font-size: 16px; 
-  margin: 0; 
+  font-size: 16px;
+  margin: 0;
   font-family: "Satoshi", sans-serif;
 }
 
 .shop-now-button:hover {
-  background-color: #333; 
+  background-color: #333;
 }
 .hero-side-image-wrapper {
   width: 1440px;
@@ -261,7 +260,6 @@ nav ul li {
 .profile-icon {
   background: url("pictures/Vector.svg") no-repeat center;
 }
-
 
 .container {
   max-width: 1440px;
@@ -443,6 +441,7 @@ a {
   text-align: center;
   font-family: "Alfa Slab One", serif;
 }
+
 .products {
   width: 100%;
   display: grid;
@@ -471,4 +470,65 @@ a {
 .product_price {
   font-size: 2.6rem;
   margin-top: 1rem;
+}
+
+.gallery_container {
+  width: 100%;
+  padding: 5rem;
+  background-color: #f0f0f0;
+  border-radius: 3rem;
+}
+.gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 5vw);
+  grid-gap: 1.5rem;
+}
+.grid_item_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+.grid_item_img_1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.grid_item_img_2 {
+  grid-column-start: 4;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.grid_item_img_3 {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 7;
+}
+.grid_item_img_4 {
+  grid-column-start: 6;
+  grid-column-end: 9;
+  grid-row-start: 4;
+  grid-row-end: 7;
+}
+
+.grid_item {
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.grid_item_title {
+  position: absolute;
+  top: 25px;
+  left: 36px;
+  font-family: "Satoshi", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+  z-index: 10;
 }
