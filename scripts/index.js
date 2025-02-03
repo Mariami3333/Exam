@@ -66,42 +66,42 @@ document.addEventListener("DOMContentLoaded", () => {
     slidesPerView: 3,
     spaceBetween: 30,
     freeMode: false,
-    allowTouchMove: false, 
-    noSwiping: true, 
-    preventClicks: true, 
-    simulateTouch: false, 
+    allowTouchMove: false,
+    noSwiping: true,
+    preventClicks: true,
+    simulateTouch: false,
     pagination: {
       el: ".swiper-pagination",
-      clickable: false, 
+      clickable: false,
     },
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween: 10
+        spaceBetween: 10,
       },
       480: {
         slidesPerView: 1,
-        spaceBetween: 20
+        spaceBetween: 20,
       },
       768: {
         slidesPerView: 2,
-        spaceBetween: 20
+        spaceBetween: 20,
       },
       1024: {
         slidesPerView: 3,
-        spaceBetween: 30
-      }
+        spaceBetween: 30,
+      },
     },
     mousewheel: false,
     keyboard: false,
   });
-  
+
   // Add event listeners for arrow navigation
-  document.querySelector('.left-arrow').addEventListener('click', () => {
+  document.querySelector(".left-arrow").addEventListener("click", () => {
     swiper.slidePrev();
   });
-  
-  document.querySelector('.right-arrow').addEventListener('click', () => {
+
+  document.querySelector(".right-arrow").addEventListener("click", () => {
     swiper.slideNext();
   });
 });
